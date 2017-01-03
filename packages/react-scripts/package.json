@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-ts-sp",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "SharePoint TypeScript and create-react-app",
   "repository": "yosharepoint/create-react-app",
   "license": "BSD-3-Clause",
@@ -25,7 +25,7 @@
     "react": "15.4.1",
     "react-dom": "15.4.1"
   },
-  "Dependencies": {
+  "dependencies": {
     "@types/electron": "1.4.30",
     "@types/react": "0.14.55",
     "@types/react-dom": "0.14.20",
