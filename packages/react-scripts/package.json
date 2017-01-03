@@ -1,10 +1,6 @@
 {
   "name": "react-scripts-ts-sp",
-  "version": "0.1.7",
-  "author": {
-    "name": "Mike Morrison",
-    "email": "isnull@gmail.com"
-  },
+  "version": "0.1.8",
   "description": "SharePoint TypeScript and create-react-app",
   "repository": "yosharepoint/create-react-app",
   "license": "MIT",

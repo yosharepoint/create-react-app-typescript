@@ -1,6 +1,6 @@
-# `react-scripts-ts`
+# `react-scripts-ts-sp`
 
-Create React apps (with Typescript) with no build configuration.
+Create React apps (with SharePoint and Typescript) with no build configuration.
 
 _Do you know react and want to try out typescript? Or do you know typescript and want to try out react?_ Get all the benefits from `create-react-app` but you use typescript! 🚀
 
@@ -9,14 +9,10 @@ _Do you know react and want to try out typescript? Or do you know typescript and
 ```sh
 npm install -g create-react-app
 
-create-react-app my-app --scripts-version=react-scripts-ts
+create-react-app my-app --scripts-version=react-scripts-ts-sp
 cd my-app/
 npm start
 
 ```
 ## Changelog
-### 1.0.3
-* Remove hidden character from `tsconfig.json`
 
-### 1.0.2
-* Copy `typescriptTransform.js` when running `npm run eject`
