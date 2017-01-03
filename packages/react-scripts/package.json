@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-ts-sp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SharePoint TypeScript and create-react-app",
   "repository": "yosharepoint/create-react-app",
   "license": "MIT",
@@ -22,7 +22,9 @@
     "react-scripts": "./bin/react-scripts-ts-sp.js"
   },
   "devDependencies": {
-    "@types/electron": "1.4.30",
+  },
+  "Dependencies": {
+        "@types/electron": "1.4.30",
     "@types/react": "0.14.55",
     "@types/react-dom": "0.14.20",
     "@types/jest": "16.0.3",
@@ -60,9 +62,7 @@
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "1.0.0"
-  },
-  "Dependencies": {
+    "whatwg-fetch": "1.0.0",
     "electron-prebuilt": "1.4.13",
     "mobx": "2.7.0",
     "mobx-react": "4.0.4",
