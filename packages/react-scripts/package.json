@@ -1,9 +1,9 @@
 {
   "name": "react-scripts-ts-sp",
-  "version": "0.2.4",
+  "version": "0.2.7",
   "description": "SharePoint TypeScript and create-react-app",
   "repository": "yosharepoint/create-react-app",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
   },
