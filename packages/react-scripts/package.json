@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-ts-sp",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "SharePoint TypeScript and create-react-app",
   "repository": "yosharepoint/create-react-app",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts-ts-sp": "./bin/react-scripts-ts-sp.js"
+    "react-scripts": "./bin/react-scripts-ts-sp.js"
   },
   "devDependencies": {
     "@types/electron": "1.4.30",
