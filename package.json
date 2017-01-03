@@ -1,11 +1,5 @@
 {
-  "name": "react-scripts-ts-sp",
-  "version": "0.1.0",
-  "author": {
-    "name": "Mike Morrison",
-    "email": "isnull@gmail.com"
-  },
-  "private": false,
+  "private": true,
   "scripts": {
     "build": "node packages/react-scripts/scripts/build.js",
     "changelog": "lerna-changelog",

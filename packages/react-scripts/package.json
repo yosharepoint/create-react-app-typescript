@@ -1,7 +1,11 @@
 {
-  "name": "react-scripts-ts-sp",
-  "version": "1.0.3",
-  "description": "Configuration and scripts for Create React App.",
+  "name": "@yosharepoint/react-scripts-ts-sp",
+  "version": "0.1.3",
+  "author": {
+    "name": "Mike Morrison",
+    "email": "isnull@gmail.com"
+  },
+  "description": "SharePoint TypeScript and create-react-app",
   "repository": "yosharepoint/create-react-app",
   "license": "MIT",
   "engines": {
@@ -19,7 +23,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts-ts": "./bin/react-scripts-ts.js"
+    "react-scripts-ts-sp": "./bin/react-scripts-ts-sp.js"
   },
   "devDependencies": {
     "@types/electron": "1.4.30",
@@ -37,7 +41,7 @@
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.9.0",
     "filesize": "3.3.0",
-    "fs-extra": "0.30.0",
+    "fs-extra": "1.0.0",
     "gzip-size": "3.0.0",
     "html-webpack-plugin": "2.25.0",
     "http-proxy-middleware": "0.17.3",

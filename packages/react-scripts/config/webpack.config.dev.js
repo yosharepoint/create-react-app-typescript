@@ -43,26 +43,34 @@ module.exports = {
   // These are the "entry points" to our application.
   // This means they will be the "root" imports that are included in JS bundle.
   // The first two entry points enable "hot" CSS and auto-refreshes for JS.
-  entry: [
-    // Include an alternative client for WebpackDevServer. A client's job is to
-    // connect to WebpackDevServer by a socket and get notified about changes.
-    // When you save a file, the client will either apply hot updates (in case
-    // of CSS changes), or refresh the page (in case of JS changes). When you
-    // make a syntax error, this client will display a syntax error overlay.
-    // Note: instead of the default WebpackDevServer client, we use a custom one
-    // to bring better experience for Create React App users. You can replace
-    // the line below with these two lines if you prefer the stock client:
-    // require.resolve('webpack-dev-server/client') + '?/',
-    // require.resolve('webpack/hot/dev-server'),
-    require.resolve('react-dev-utils/webpackHotDevClient'),
-    // We ship a few polyfills by default:
-    require.resolve('./polyfills'),
-    // Finally, this is your app's code:
-    paths.appIndexJs
-    // We include the app code last so that if there is a runtime error during
-    // initialization, it doesn't blow up the WebpackDevServer client, and
-    // changing JS code would still trigger a refresh.
-  ],
+  entry: {
+    bundle: [
+      // Include an alternative client for WebpackDevServer. A client's job is to
+      // connect to WebpackDevServer by a socket and get notified about changes.
+      // When you save a file, the client will either apply hot updates (in case
+      // of CSS changes), or refresh the page (in case of JS changes). When you
+      // make a syntax error, this client will display a syntax error overlay.
+      // Note: instead of the default WebpackDevServer client, we use a custom one
+      // to bring better experience for Create React App users. You can replace
+      // the line below with these two lines if you prefer the stock client:
+      // require.resolve('webpack-dev-server/client') + '?/',
+      // require.resolve('webpack/hot/dev-server'),
+      require.resolve('react-dev-utils/webpackHotDevClient'),
+      // We ship a few polyfills by default:
+      require.resolve('./polyfills'),
+      // Finally, this is your app's code:
+      paths.appIndexJs
+      // We include the app code last so that if there is a runtime error during
+      // initialization, it doesn't blow up the WebpackDevServer client, and
+      // changing JS code would still trigger a refresh.
+    ],
+    main: [
+      // We ship a few polyfills by default:
+      require.resolve('./polyfills'),
+      // Finally, this is your app's code:
+      paths.electronEntry
+    ]
+  },
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
     path: paths.appBuild,
@@ -104,13 +112,11 @@ module.exports = {
   module: {
     // First, run the linter.
     // It's important to do this before Babel processes the JS.
-    preLoaders: [
-      {
-        test: /\.(ts|tsx)$/,
-        loader: 'tslint',
-        include: paths.appSrc,
-      }
-    ],
+    preLoaders: [{
+      test: /\.(ts|tsx)$/,
+      loader: 'tslint',
+      include: paths.appSrc,
+    }],
     loaders: [
       // Default loader: load all assets that are not handled
       // by other loaders with the url loader.
@@ -155,8 +161,7 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'style!css?importLoaders=1!postcss'
-      },
-      {
+      }, {
         test: /\.scss$/,
         loader: 'style!css?importLoaders=1!postcss!sass'
       },
@@ -177,7 +182,7 @@ module.exports = {
     ]
   },
   // We use PostCSS for autoprefixing only.
-  postcss: function() {
+  postcss: function () {
     return [
       autoprefixer({
         browsers: [
