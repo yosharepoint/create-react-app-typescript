@@ -54,6 +54,7 @@ prompt(
     path.join('config', 'paths.js'),
     path.join('config', 'polyfills.js'),
     path.join('config', 'webpack.config.dev.js'),
+    path.join('config', 'webpack.config.electron.js'),
     path.join('config', 'webpack.config.prod.js'),
     path.join('config', 'jest', 'cssTransform.js'),
     path.join('config', 'jest', 'fileTransform.js'),
