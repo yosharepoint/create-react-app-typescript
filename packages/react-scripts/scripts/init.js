@@ -70,11 +70,11 @@ module.exports = function(appPath, appName, verbose, originalDirectory) {
     command = 'npm';
     args = [
       'install',
-      '--save',
+      '--save-exact',
       verbose && '--verbose'
     ].filter(function(e) { return e; });
   }
-  args.push('react', 'react-dom', '@types/node', '@types/react', '@types/react-dom', '@types/jest');
+  args.push('react', 'react-dom', '@types/node', '@types/react', '@types/react-dom', '@types/jest', '@types/electron');
 
   console.log('Installing react and react-dom using ' + command + '...');
   console.log();
