@@ -64,12 +64,12 @@ module.exports = {
       // initialization, it doesn't blow up the WebpackDevServer client, and
       // changing JS code would still trigger a refresh.
     ],
-    "main": [
-      // We ship a few polyfills by default:
-      require.resolve('./polyfills'),
-      // Finally, this is your app's code:
-      paths.electronEntry
-    ]
+    // "main": [
+    //   // We ship a few polyfills by default:
+    //   require.resolve('./polyfills'),
+    //   // Finally, this is your app's code:
+    //   paths.electronEntry
+    // ]
   },
   output: {
     // Next line is not used in dev but WebpackDevServer crashes without it:
