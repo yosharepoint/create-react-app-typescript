@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-sp",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "SharePoint Developer Focused.  Includes PnP-JS-Core, Office Fabric React Components, TypeScript, Mobx, React and Electron (optional), cross platform starter kit delivered via create-react-app for a config free development experience.",
   "repository": "yosharepoint/create-react-app",
   "license": "BSD-3-Clause",
@@ -26,10 +26,6 @@
     "react-dom": "15.4.1"
   },
   "dependencies": {
-    "@types/electron": "1.4.30",
-    "@types/react": "0.14.55",
-    "@types/react-dom": "0.14.20",
-    "@types/jest": "16.0.3",
     "autoprefixer": "6.6.0",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
     "chalk": "1.1.3",
